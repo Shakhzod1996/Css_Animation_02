@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.swip {
+    font-size: 45px;
+    font-weight: 500;
+    color: rgb(156, 58, 58);
+    animation-name: slider;
+    animation-duration: 3s;
+}
+
+.s1 {
+    animation-delay: 0;
+}
+
+.s2 {
+    animation-delay: .5s;
+}
+
+.s3 {
+    animation-delay: 1s;
+}
+
+.s4 {
+    animation-delay: 1.5s;
+}
+
+.s5 {
+    animation-delay: 2s;
+}
+
+.s6 {
+    animation-delay: 2.5s;
+}
+
+.s7 {
+    animation-delay: 3s;
+}
+
+@keyframes slider {
+    from {
+        margin-bottom: 0;
+        color: rgb(156, 58, 58);
+    }
+
+    to {
+        margin-bottom: 300px;
+        transform: scale(1);
+        opacity: .5s;
+        color: aqua;
+    }
+}
